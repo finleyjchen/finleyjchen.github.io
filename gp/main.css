@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Cinzel:400,700|Courgette|Crimson+Text:400,400i,600,600i,700|Inconsolata:400,700|Josefin+Slab:400,400i,600|Julius+Sans+One|Lato:100,100i,300,300i,400,700,900|Lobster|Lora:400,700|Metamorphous|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,800,900|Nunito:200,200i,300,400,600,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Oswald:200,300,400,500|Pacifico|Quicksand:300,400,500,700|Roboto+Condensed|Roboto+Slab|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Slabo+27px|Source+Sans+Pro:200,200i,300,300i,400,600,700,900|Source+Serif+Pro:400,600,700');
+
+html {
+	font-size: 1em;;
+	font-family:"Source Serif Pro";
+	line-height:1.2;
+}
+body{
+	background-color:white;
+	background-attachment:scroll;
+	background-size: cover;
+	background-image:url('img/vertical_wall.jpg');
+	border:1px solid black;
+	width:100%;
+	height:100%;
+	font-size:18px;
+	line-height:3em;
+	overflow:scroll; 
+	margin:3.5%;
+}
+
+header {
+	
+}
+#title{
+	font-size:50px;
+	text-align: center;
+	color: white;
+	font-family:"Cinzel";
+	text-shadow: 1px 1px 2px black;
+}
+li {
+	display: inline;
+}
+ul {
+	text-decoration: none;
+	color:white;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Crimson Text";
+}
+a {
+	text-decoration: none;
+	color:black;
+	font-size: 30px;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.nav {
+	color:white;
+}
+nav {
+	text-align: center;
+}
+
+img.weapons {
+	display:block;
+	margin: 0 auto;
+	width:425px;
+	height:212px;
+}
+.container {
+	background-color:white;
+	background-blend-mode: overlay;
+	color: black;
+	opacity:.9;
+}
+aside {
+	position:fixed;
+	top:10%;
+	bottom:0;
+	left:3.5%;
+	width:20%;
+	border: 2px solid black;
+	padding:1%;
+	font-size:16px;
+	opacity: .9;
+
+}
+
+article {
+ 	margin-left:23.5%;
+ 	margin-right: 7%;
+ 	border: 2px solid black;
+ 	padding:1%;
+}
+h1 {
+}
+
+.sidelink {
+	color: black;
+	font-size: 20px;
+	padding:3px;
+	font-style: none;
+	text-shadow: none;
+
+	}
+
+.poroicon {
+	width:40px;
+	length:40px;
+	padding-right:10px;
+}
+
+iframe {
+	width:100%;
+	height:600px;
+}
