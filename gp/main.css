@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Cinzel:400,700|Courgette|Crimson+Text:400,400i,600,600i,700|Inconsolata:400,700|Josefin+Slab:400,400i,600|Julius+Sans+One|Lato:100,100i,300,300i,400,700,900|Lobster|Lora:400,700|Metamorphous|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,800,900|Nunito:200,200i,300,400,600,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Oswald:200,300,400,500|Pacifico|Quicksand:300,400,500,700|Roboto+Condensed|Roboto+Slab|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Slabo+27px|Source+Sans+Pro:200,200i,300,300i,400,600,700,900|Source+Serif+Pro:400,600,700');
 
 html {
-	font-size: 1em;;
+	font-size: 1em;
 	font-family:"Source Serif Pro";
 	line-height:1.2;
 }
