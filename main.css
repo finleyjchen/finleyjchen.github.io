@@ -4,9 +4,8 @@
 html {
 	font-size: 20px;
 	font-family:"Lato";
-	background-color:#FFFFFF;
+	background-color:#3A3A3A;
 	color:white;
-	background-color:#000000;
 }
 
 body {
@@ -24,14 +23,41 @@ header {
 #title {
 	font-size:50px;
 	text-align:center;
-	text-shadow: 1px 1px 2px black;
+	text-shadow: 2px 1px 2px black;
 }
 
 #subtitle {
 	font-size:35px;
 	text-align:center;
+	text-shadow: 2px 1px 2px black;
+
 }
 
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#navbaritem {
+	float:left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+
+}
+
+li a:hover {
+	background-color: #003F1A;
+}
 article {
 	background-color:#2F2F2F;
 	padding:3.5%;
@@ -48,4 +74,10 @@ a {
 }
 a:hover {
 	color:#FFFFFF;
+}
+
+footer {
+	text-align:center;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
