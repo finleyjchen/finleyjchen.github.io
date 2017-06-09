@@ -18,3 +18,6 @@ function setIframeHeight(iframe) {
 window.onload = function () {
 	setIframeHeight(document.getElementById('article1'));
 };
+
+document.getElementById("go").onload = function () { this.contentWindow.scrollTo(0, 200) };
+l

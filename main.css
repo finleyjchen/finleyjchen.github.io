@@ -10,12 +10,14 @@ html {
 
 body {
 	background-color:#292929;
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:15%;
+	margin-right:15%;
+	width:70%;
 }
 
 header {
-	background-color:#464646;
+	/*background-color:#464646;*/
+	background-color: #3A3A3A;
 	width:100%;
 
 }
