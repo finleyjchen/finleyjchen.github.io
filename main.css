@@ -49,7 +49,7 @@ header {
 	float:left;
 }
 
-li a {
+#navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -59,7 +59,7 @@ li a {
 
 }
 
-li a:hover {
+#navbar li a:hover {
 	background-color: #D5F0DB;
 	color:black;
 }
@@ -74,11 +74,11 @@ p {
 }
 
 a {
-	text-decoration: none;
-	color:#878787;
+	/*text-decoration: none;*/
+	color:#969696;
 }
 a:hover {
-	color:#FFFFFF;
+	color:#D5F0DB;
 }
 
 footer {
