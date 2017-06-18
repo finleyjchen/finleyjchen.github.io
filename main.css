@@ -10,9 +10,8 @@ html {
 
 body {
 	background-color:#292929;
-	margin-left:15%;
-	margin-right:15%;
-	width:70%;
+	margin:0;
+	padding:0;
 }
 
 header {
@@ -59,11 +58,6 @@ header {
     text-decoration: none;
     transition: background-color .3s;
 
-}
-
-#navbaritemcurrent {
-	float:left;
-	background-color:#D5F0DB;
 }
 
 #navbar li a:hover {
