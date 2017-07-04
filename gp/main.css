@@ -44,8 +44,8 @@ ul {
 }
 a {
 	text-decoration: none;
-	color:black;
-	font-size: 30px;
+	color:gray;
+	font-weight: bold;
 }
 a:hover {
 	text-decoration: underline;
@@ -115,3 +115,17 @@ code {
 	background-color:white;
 	color:black;
 }
+
+#col {
+  -moz-column-count: 2;
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  display:block;
+}
+
+div {
+	margin:0px auto;
+	padding-right:20px;
+}
+
