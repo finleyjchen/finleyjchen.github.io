@@ -23,11 +23,12 @@ header {
 	
 }
 #title{
-	font-size:50px;
+	font-size:75px;
 	text-align: center;
 	color: white;
 	font-family:"Cinzel";
 	text-shadow: 1px 1px 2px black;
+	font-weight:bold;
 }
 nav li {
 	display: inline;
@@ -83,7 +84,6 @@ aside {
 	padding-right: 1%;
 	font-size: 30px	;
 	background-color:white;
-	font-size: 50px	;
 	background-color: white;
 }
 
@@ -106,7 +106,7 @@ h1 {
 }
 #sidebar a {
 	color: black;
-	font-size: 40px;
+	font-size: 35px;
 	padding:3px;
 	font-style: none;
 	text-shadow: none;
@@ -114,8 +114,8 @@ h1 {
 	}
 
 .poroicon {
-	width:40px;
-	height:40px;
+	width:60px;
+	height:60px;
 	padding-right:10px;
 }
 
@@ -147,4 +147,8 @@ div {
 	width: 600px;
 	height:auto;
 
+}
+
+.imgcaption {
+	font-size:15px;
 }
