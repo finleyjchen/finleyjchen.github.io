@@ -156,3 +156,8 @@ div {
   top: 0;
   visibility: hidden;
 }
+
+.itemImage {
+	width: 64px;
+	height:auto;
+}
