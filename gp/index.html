@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>inlorfaze - home</title>
-        <meta name="description" content="">
+        <meta name="description" content="Gangplank Guide and Build by inlorfaze">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" href="/favicon.ico">
@@ -29,27 +29,33 @@
         <meta name="msapplication-TileImage" content="/favicon-144.png">
         <meta name="msapplication-config" content="/browserconfig.xml">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
+        <script type="text/javascript">
+            function resizeText(multiplier) {
+                if (document.body.style.fontSize == "") {
+                    document.body.style.fontSize = "1.0em";
+                 }
+                document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+                }
+
+        </script>
+        <!--<script>
         $(window).scroll(function(){
         $("#sidebar").css("top",Math.max(0,400-$(this).scrollTop()));});
         console.log(1);
-
-        </script>
+        </script>-->
     </head>
     <body>
-        <header> <p id="title"><img src="img/Gangplank_Poro_Icon.png" class="poroicon">Gangplank Guide</p>
+        <header> <p id="title">How to Gangplank</p>
         <img align="middle" class="weapons" src="img/GP_Weapons.png">
     </header>
     <nav>
         <ul>
-            <li><a class="nav" href="discussion.html">Discussion </a>|</li>
-            <li><a class="nav" href="guide.html">Guide  </a>|</li>
-            <li><a class="nav" href="media.html">Community Montage  </a>|</li>
-            <li><a class="nav" href="https://www.reddit.com/r/gangplankmains">Subreddit</a></li>
+            <li><a class="nav" href="discussion.html">Discussion</a> | </li>
+            <li><a class="nav" href="https://www.reddit.com/r/gangplankmains">Subreddit</a> | </li>
+            <li><a class="nav" href="matchups.html">Matchups</a></li>
         </ul>
     </nav>
     <aside id="sidebar" >
-        <hr>
         <a href="#introduction">Introduction</a>
         <br>
         <a href="#quickguide">Quick Guide</a>
@@ -63,89 +69,121 @@
         <a href="#barrels">Barrels</a>
         <br>
         <a href="#mechanics">Mechanics</a>
+        <br>
+        <a href="#macroplay">Macro Play</a>
     </aside>
-
-<article id="main" class="container persist-area">
-    
-
-    <section id ="introduction">
-        <h1>Introduction</h1>
-        <p>I am inlorfaze. I have been playing gangplank since 2015 and have a cumulative 1 million mastery points on gangplank. I started playing him at gold 2 and got to masters with him. <img id="master" src="img/master.PNG"></p>
-        <p>I play a tobias fate-inspired playstyle, mid lane preferred. This guide is not what I think is best, however. It will include several different playstyles and in-depth top lane discussion. I have played every type of gangplank you can think of - full ad runes, adc gangplank, jungle gangplank, ap gangplank, you name it. I've played it. In high elo NA. Which is why I think that this guide is actually worth reading. This guide is not law - you need to read through this guide, and play the many different variations. Gangplank is a champion that takes many games to learn - he is extremely rewarding, but expect to have a huge learning curve. Remember - practice makes perfect. Reading this guide isn't going to get you do diamond - reading this guide and finding your niche by playing a lot of gangplank will, however. </p>
-        <h1>The most common question: Mid or Top?</h1>
-        <p>Probably one of the most frequently asked questions, the answer is it really is up to you. For mid lane, you enjoy:
+    <article id="main" class="container persist-area">
+        
+        <section id ="introduction">
+            <h1>Introduction</h1>
+            <p>This guide is a work in progress. There are tons of typos, stuff to fix up, etc. Everything is subject to change. It was started as a small web development project (to try out different techniques in CSS), but I thought, why not make a good guide, updated per patch, with everything there is to know about gangplank? I present to you, the most in-depth written guide anybody has every made on Gangplank. I am currently hosting the website off my github.io site, I may pay for hosting should enough people be interested in this guide. You can see the entire creation and new updates here: <a href="https://github.com/inlorfaze/inlorfaze.github.io">Github Source</a></p>
+            <p>TODO</p>
             <ul>
-                <li>Shorter lane - harder to overextend</li>
-                <li>Your jungler is closer - you won't feel like an island if you have a support and jungler roaming near you.</li>
-                <li>Easier to manage matchups - You can play very safe without getting froze on, guaranteeing farm and relevance in the game</li>
-                <li>Team Comp - you generally run glass cannon in this build, so your team can still have a tank top lane and round out your team composition much better</li>
-                <li>Have more control of the map - roaming is much easier in the mid lane</li>
+                <li>Masteries</li>
+                <li>Barrel spots</li>
+                <li>Laning phase mentalities and strategies</li>
+                <li>Wave control</li>
+                <li>Matchups</li>
+                <li>item builds</li>
             </ul>
-            In the top lane, you can:
-            <ul>
-                <li>Use brush to use barrels</li>
-                <li>Run AD and put pressure in top turret</li>
-                <li>Build bruiser and 1v1/1v2</li>
-                <li>Round out a team comp - maybe you have a tank support and utility mid, so your team needs more damage and aoe</li>
-            </ul>
-            I personally prefer the mid lane because top lane can have some nasty matchups that render you useless for the majority of the game, but that is because in high elo people will know to camp you very hard in the top lane, as gangplank is weak to tower dives. Tough mid lane matchups can be easier to work around if you understand wave management. For help on that, I recommend watching <a href="https://youtu.be/dEX7JxeKCxg">Dong Huap's video</a> or <a href="https://youtu.be/HSQWcHIl5oc">SoloRenektonOnly's video</a>. I also run full glass cannon every game, making full damage gangplank top not as viable for every team composition. Many people have success in the top lane, however, it just requires much more lane macro play to prevent ganks.
-        </p>
-    </section>
-    <section id="quickguide">
-        <h1>Quick Guide</h1>
-    </section>
-    <section id="runes">
-        <h1>Runes</h1>
-        <p>(CDR= Cooldown Reduction)Runes are very important on gangplank. There are many variations, and they all are useful depending on your playstyle. CDR Runes are very popular and good because it decreases your huge barrel cooldown a ton, and helps you farm with q's much easier in the early game. You can read <a href="https://www.reddit.com/r/gangplankmains/comments/5ews46/i_offered_to_compare_two_possible_gp_builds_and/">this</a> link for more reading.</p>
-        <div id="adrunes"><h3>Attack Damage - RECOMMENDED FOR BEGINNERS</h3>
-            <p>Used more often in the top lane. Early game focused runes that will help you trade and push better. Take scaling health seals (yellows) against ap matchups, and alternatively change glyphs to magic resist or 6 flat CDR 3 scaling CDR 1 CDR quint if you want to give up 5% early CDR.<img src="img/adrunes.PNG"></p>
-        </div>
-        <div id="lethrunes"><h3>Lethality</h3>
-            <p>Sacrifice early game stats altogether for a huge payout - run lethality runes. Lethality is a flat penetration stat that gets more and more effective as your enemies lvl increases. Therefore, early game you deal much, much less damage. It will make trading and last-hitting very difficult. However, come around triforce and level 7 and above and you will start seeing your lethality runes shine. This page will have the maximum damage in the late game.
-            </p><img src="img/lethrunes.PNG">
-            <p>SITUATIONAL: Swap out CDR for a lethality quint and magic resist glyphs (blues), useful for tough ap matchups that you still want to scale into, or swap out scaling health seals (yellows) for armor against tough ad matchups.</p>
-        </div>
-    </section>
-    <section id="masteries">
-        <h1>Masteries</h1>
-        <p>The most common page for gangplank is 12-18-0, opting for bandit (a very effective mastery on gangplank - your Parrrley counts as a melee attack, giving you 10 gold every time you Q an enemy champion), Sorcery, and fresh blood. The other options are personal preference and playstyle. We will be discussing them.</p>
-    </section>
-    <section id="builds">
-        <h1>Builds</h1>
-        <p>Builds vary by situation. I'll be honest - in high elo, you just don't seem to be strong enough to carry games unless you run full damage. You need to scout out your team, figure out who will be doing the most damage to you, who's the most skilled player on your team and on theirs, and build accordingly.</p>
-
-        <p><b>Skill Upgrades: </b>Always max Q -> E -> W, with ult every time.</p>
-        <p>What about levels 1-4?: Don't level up anything level 1 if they have a morgana, lux, etc. and can kill you level 1. In this case you'd need to level up w first to escape that. Otherwise, always start Q. Now, there are three early lane starting skills. Some run Lvl 3 Q > W > Q, for easy harass. This is only good if you need to worry about an early level 2 or 3 gank from a jungler, like a Lee Sin, Elise, Rek'sai. Not only to cleanse cc, but to gain health. <i>Tip!: IF they have a Zac, Rakan, etc. knocking you up and you need to escape, you can't cleanse knockups, however you CAN cleanse and flash, thus negating the knockup.</i> Running Q > E > W is the most standard, because most likely you will just be sitting back, farming with Q and not have to worry too much about ganks. At level 2, get barrel and instantly place one down just behind your minion wave, or directly in it. Running Q > E > Q is also viable. It is useful if you are against an easy matchup, such as Kassadin or Nasus. Having level 2 Q damage will increase your barrel damage even more, helping you shove a lane with barrels, or going for an early kill.</p>
-
-        <p><b>Glass Cannon</b><br><img class="itemImage" src="img/Trinity_Force_item.png"><img class="itemImage" src="img/Youmuu's_Ghostblade_item.png"><img class="itemImage" src="img/Infinity_Edge_item.png"><img class="itemImage" src="img/Statikk_Shiv_item.PNG"><img class="itemImage" src="img/Phantom_Dancer_item.png"><img class="itemImage" src="img/Mortal_Reminder_item.png">
-        <p> This build works wonders. This is my go-to build, if you ever watch some of my low elo climbing builds, I literally run this build every time. And it works, especially with Lethality Runes. If you want to run lethality runes, this is the build for you. Why? Because Youmuu's gives you an excellent build path (just stack long swords!), and the lethality, 10% cdr to max out, and the movespeed active is highly underrated. <br> Options: Change out <img class="itemImage" src="img/Youmuu's_Ghostblade_item.png"> for <img class="itemImage" src="img/Edge_of_Night_item.png"> in the case of a fizz, leblanc, veigar and you need more survivability.</p>
-    </section>
-    <section id="barrels">
-        <h1>Barrels</h1>
-        <p>Note: All of these combos are useful. A good gangplank will use the right one at the right time, making gangplank one of the most advanced champions to play. I will discuss how to know when to use the right combo in the <a href="#mechanics">mechanics</a> section. Barrel cooldown decreases at level 7 and level 13.</p>
-        <p><b>Single Barrel: </b>Most useful at level 13, you can place these right on top of people, and if you practice the timing, most likely will hit people. Useful for chasing, and against tanks who have slower attack speed. Most efficient, since it only takes one barrel.</p>
-        <p><b>Double Barrel: </b>Bread and butter combo. Most useful combo, use it when chasing, kiting, etc. See: <a href="#doublebarrel">double barrel with flash</a>
-        <p><b>One Part</b>
+            <p>My name is inlorfaze. I have been playing gangplank since 2015 and have a cumulative 1 million mastery points on gangplank. I started playing him at gold 2 and got to masters with him. <img id="masterimg" src="img/master.PNG"></p>
+            <p>I play a tobias fate-inspired playstyle, mid lane preferred. This guide is not what I think is best, however. It will include several different playstyles and in-depth top lane discussion. I have played every type of gangplank you can think of - full ad runes, adc gangplank, jungle gangplank, ap gangplank, you name it. I've played it. In high elo NA. Which is why I think that this guide is actually worth reading. This guide is not law - you need to read through this guide, and play the many different variations. Gangplank is a champion that takes many games to learn - he is extremely rewarding, but expect to have a huge learning curve. Remember - practice makes perfect. Reading this guide isn't going to get you do diamond - reading this guide and finding your niche by playing a lot of gangplank will, however. </p>
+            <h3>Follow this guide and you WILL gain elo</h3>
+            <p>Order of priority to learn to win the game:
+            <ol>
+                <li>Macro play: Learn rotations and positioning, never get caught</li>
+                <li>Micro play: Stay healthy in lane, ward up strategically, and outtrade or solo kill</li>
+                <li>Itemization: Build according to your playstyle and your enemies/matchup</li>
+            </ol>
+            <h1>The most common question: Mid or Top?</h1>
+            <p>Probably one of the most frequently asked questions, the answer is it really is up to you. For mid lane, you enjoy:
+                <ul>
+                    <li>Shorter lane - harder to overextend</li>
+                    <li>Your jungler is closer - you won't feel like an island if you have a support and jungler roaming near you.</li>
+                    <li>Easier to manage matchups - You can play very safe without getting froze on, guaranteeing farm and relevance in the game</li>
+                    <li>Team Comp - you generally run glass cannon in this build, so your team can still have a tank top lane and round out your team composition much better</li>
+                    <li>Have more control of the map - roaming is much easier in the mid lane</li>
+                </ul>
+                In the top lane, you can:
+                <ul>
+                    <li>Use brush to use barrels</li>
+                    <li>Run AD and put pressure in top turret</li>
+                    <li>Build bruiser and 1v1/1v2</li>
+                    <li>Round out a team comp - maybe you have a tank support and utility mid, so your team needs more damage and aoe</li>
+                </ul>
+                I personally prefer the mid lane because top lane can have some nasty matchups that render you useless for the majority of the game, but that is because in high elo people will know to camp you very hard in the top lane, as gangplank is weak to tower dives. Tough mid lane matchups can be easier to work around if you understand wave management. For help on that, I recommend watching <a href="https://youtu.be/dEX7JxeKCxg">Dong Huap's video</a> or <a href="https://youtu.be/HSQWcHIl5oc">SoloRenektonOnly's video</a>. I also run full glass cannon every game, making full damage gangplank top not as viable for every team composition. Many people have success in the top lane, however, it just requires much more lane macro play to prevent ganks.
+            </p>
         </section>
-        <section id="mechanics">
-            <h1>Mechanics</h1>
-            <p>Knowing when to use barrels to maximize damage is very important. Gangplank can only hold 3 barrels at a time, so keeping the cooldown of your next barrel is very important.</p>
-
-            <p><b>Enemies destroying your barrels: </b>ADC's (I'm looking at you Caitlyn!) love to try to auto attack your barrels. As you reach higher elo, you will notice nearly everyone realizes if they auto your barrel, you will lose most of your damage and render you useless. Be not afraid, high elo mains have figured it out! If a melee champion is trying to auto your barrels, you are in a good position. Outplay and they will lose an autoattack AND you will get a barrel off. Pre level 13, your barrels tick down slower. Use this to your advantage by placing it -> Enemy walks up to auto the barrel -> and you walk up and auto the barrel, then Q just when the barrel's first tick goes. This method works nearly every time, however you might lose out on sheen damage. This works best early game pre-sheen. </p>
-            <p>Against ranged enemies, it can be just as easy to land a barrel. Instead of q'ing the barrel, you place another and auto it just as it ticks down. With good timing, you should be able to always get the auto off faster than the adc's auto, since you are melee and closest the barrel.</p>
-            <p class="imgcaption">Ashe trying to auto my barrel feat. Gosu. Show'em who's boss!</p>
-            <img src="https://gyazo.com/57c3f440359692988db467260cd1dde3.gif" width="600">
-
-            <p><b>Saving barrels: </b>Using the triple barrel combo is fun and flashy. However, it may not be the best combo to use in a teamfight. Using three barrels means you won't have any left. One trick you can use is to place a barrel in a place that the enemy can't see or probably won't go to auto, then wait for the barrel cooldown. In this case, you will have 1 barrel down, and 3 barrels left, allowing you to do more with an extra barrel. If you only use a triple barrel combo in a fight, landing one barrel may not be enough, so use double and single barrels, like in this example.<img src="https://i.gyazo.com/aa1eb60fa1fe6cc695a48deb539c3e64.gif" alt="https://gyazo.com/aa1eb60fa1fe6cc695a48deb539c3e64" width="800"/></p>
-
-            <p><b>Using Flash:</b> You can use flash to make some <i>flashy</i> plays. These are difficult (and risky if you mess up and just flash in place), however I think the most reliable and best one is the flash auto barrel.</p>
-            <img src="https://gyazo.com/004bc8fad33fa3c4f8dddb99afa68b74.gif" width="600">
-            <img id="doublebarrel" src="https://i.gyazo.com/666ed594e738b596f7fdb20da0a991b1.gif" width="600"/>
-            <p>If you're feeling lucky, try out the flash triple barrel.</p>
-            <img id="flashtriple" src="https://i.gyazo.com/eaede2d7b7dd493aa0e68473c3f303eb.gif" width="600"/>
-
-
+        <section id="quickguide">
+            <h1>Quick Guide</h1>
+            <p>WORK IN PROGRESS</p>
         </section>
-    </article>
-</body>
+        <section id="runes">
+            <h1>Runes</h1>
+            <p>(CDR= Cooldown Reduction)Runes are very important on gangplank. There are many variations, and they all are useful depending on your playstyle. CDR Runes are very popular and good because it decreases your huge barrel cooldown a ton, and helps you farm with q's much easier in the early game. You can read <a href="https://www.reddit.com/r/gangplankmains/comments/5ews46/i_offered_to_compare_two_possible_gp_builds_and/">this</a> link for more reading.</p>
+            <div id="adrunes"><h3>Attack Damage - RECOMMENDED FOR BEGINNERS</h3>
+                <p>Used more often in the top lane. Early game focused runes that will help you trade and push better. Take scaling health seals (yellows) against ap matchups, and alternatively change glyphs to magic resist or 6 flat CDR 3 scaling CDR 1 CDR quint if you want to give up 5% early CDR.<img class="runePage" src="img/adrunes.PNG"><img class="runePage" src="img/antiwizardplank.PNG"></p>
+                <p>Scaling AD: I only know of one player who can use scaling AD effectively, that is <a href="https://na.op.gg/summoner/userName=godrjsdnd">godrjsdnd</a>. It works best when paired with the full crit build. Check him out, I don't personally use it but it can work.</p>
+            </div>
+            <div id="lethrunes"><h3>Lethality</h3>
+                <p>Sacrifice early game stats altogether for a huge payout - run lethality runes. Lethality is a flat penetration stat that gets more and more effective as your enemies lvl increases. Therefore, early game you deal much, much less damage. It will make trading and last-hitting very difficult. However, come around triforce and level 7 and above and you will start seeing your lethality runes shine. This page will have the maximum damage in the late game.
+                </p><img class="runePage" src="img/lethrunes.PNG"><img class="runePage" src="img/lethmrrunes.PNG">
+                <p>SITUATIONAL: Swap out CDR for a lethality quint and magic resist glyphs (blues), useful for tough ap matchups that you still want to scale into, or swap out scaling health seals (yellows) for armor against tough ad matchups.</p>
+            </div>
+        </section>
+        <section id="masteries">
+            <h1>Masteries</h1>
+            <p>The most common page for gangplank is 12-18-0, opting for bandit (a very effective mastery on gangplank - your Parrrley counts as a melee attack, giving you 10 gold every time you Q an enemy champion), Sorcery, and fresh blood. The other options are personal preference and playstyle. We will be discussing them. (GRASP VS TLD, STORMRAIDERS, ETC. WORK IN PROGRESS) </p>
+        </section>
+        <section id="builds">
+            <h1>Builds</h1>
+            <p>Builds vary by situation. I'll be honest - in high elo, you just don't seem to be strong enough to carry games unless you run full damage. You need to scout out your team, figure out who will be doing the most damage to you, who's the most skilled player on your team and on theirs, and build accordingly.</p>
+            <p><b>Starting Items</b></p>
+            <p>Starting Items vary widely. They are very situational, and depend highly on the matchup (as well as the jungler). To figure out which starting item to use, see the <a href="matchups.html">matchup guide</a>
+            <p><b>Skill Upgrades: </b>Always max Q -> E -> W, with ult every time.</p>
+
+            <p>What about levels 1-4?: Don't level up anything level 1 if they have a morgana, lux, etc. and can kill you level 1. In this case you'd need to level up w first to escape that. Otherwise, always start Q. Now, there are three early lane starting skills. Some run Lvl 3 Q > W > Q, for easy harass. This is only good if you need to worry about an early level 2 or 3 gank from a jungler, like a Lee Sin, Elise, Rek'sai. Not only to cleanse cc, but to gain health. <i>Tip!: IF they have a Zac, Rakan, etc. knocking you up and you need to escape, you can't cleanse knockups, however you CAN cleanse and flash, thus negating the knockup.</i> Running Q > E > W is the most standard, because most likely you will just be sitting back, farming with Q and not have to worry too much about ganks. At level 2, get barrel and instantly place one down just behind your minion wave, or directly in it. Running Q > E > Q is also viable. It is useful if you are against an easy matchup, such as Kassadin or Nasus. Having level 2 Q damage will increase your barrel damage even more, helping you shove a lane with barrels, or going for an early kill.</p>
+            <p><b>Glass Cannon</b><br><img class="itemImage" src="img/Trinity_Force_item.png"><img class="itemImage" src="img/Youmuu's_Ghostblade_item.png"><img class="itemImage" src="img/Infinity_Edge_item.png"><img class="itemImage" src="img/Statikk_Shiv_item.png"><img class="itemImage" src="img/Phantom_Dancer_item.png"><img class="itemImage" src="img/Mortal_Reminder_item.png">
+                <p> This build works wonders. This is my go-to build, if you ever watch some of my low elo climbing builds, I literally run this build every time. And it works, especially with Lethality Runes. If you want to run lethality runes, this is the build for you. Why? Because Youmuu's gives you an excellent build path (just stack long swords!), and the lethality, 10% cdr to max out (with 10% CDR Runes), and the movespeed active is highly underrated. <br> Options: Change out <img class="itemImage" src="img/Youmuu's_Ghostblade_item.png"> for <img class="itemImage" src="img/Edge_of_Night_item.png"> or <img src="img/Maw_of_Malmortius_item.png" class="itemImage"> in the case of a fizz, leblanc, veigar and you need more survivability.</p>
+                <p><img src="img/Caulfield's_Warhammer_item.png" class="itemImage"> vs <img src="img/Serrated_Dirk_item.png" class="itemImage"> | You should buy Serrated Dirk after triforce, then complete caulfields. This is because the passive movespeed is very useful for getting back to lane and picking up extra gold, as well as giving you 10 lethality, which makes your barrels hit very hard. It is a cheap mini-powerspike.</p>
+                <p><img src="img/Statikk_Shiv_item.png" class="itemImage"> vs <img src="img/Phantom_Dancer_item.png" class="itemImage"> | I recommend Statikk shiv first. Build zeal first (you will have IE already, so getting more crit is priority!) This is because the magic damage crits, and will make you hit very hard with your Q (which procs it) if you crit, as well as giving you room to clear waves without barrels should you need to. Phantom Dancer is great as well, good in 1v1's top lane vs Yasuo, Riven, etc. but will not provide that huge burst you will see with Statikk Shiv.</p>
+                <p>Double Zeal? I have seen a few gangplank mains run double zeal after IE, it might be good. You can try it, you will miss out on the damage from statikk shiv or the defense/movespeed from phantom dancer as well as the movespeed (zeal movespeed is unique) in exchange for an extra 10% crit chance.</p>
+
+                <p>After your triforce, you are very strong. Against a squishy with no extra armor, you should be dealing nearly half of their hp with a barrel. This makes 1v1's after your triforce powerspike very strong and can catch many people off guard. Use your ult and flash to secure a kill, 100-0 if you can manage to land a barrel.</p>
+
+            <p><b>Full Crit</b> WIP</p>
+            <p><b>Bruiser</b> WIP</p>
+            </section>
+            <section id="barrels">
+                <h1>Barrels</h1>
+                <p>Note: All of these combos are useful. A good gangplank will use the right one at the right time, making gangplank one of the most advanced champions to play. I will discuss how to know when to use the right combo in the <a href="#mechanics">mechanics</a> section. Barrel cooldown decreases at level 7 and level 13.</p>
+                <p><b>Single Barrel: </b>Most useful at level 13, you can place these right on top of people, and if you practice the timing, most likely will hit people. Useful for chasing, and against tanks who have slower attack speed. Most efficient, since it only takes one barrel.</p>
+                <p><b>Double Barrel: </b>Bread and butter combo. Most useful combo, use it when chasing, kiting, etc. See: <a href="#doublebarrel">double barrel with flash</a>
+                <p><b>One Part: </b>A bit harder of a combo to land, the key is to place a barrel, press Q on the barrel outside of Q range, and as Gangplank walks up to Q it, place another barrel as soon as you see him do his Q animation. The time it takes for his Q to travel will be just enough time to get his second barrel off.</p>
+            </section>
+            <section id="mechanics">
+                <h1>Mechanics</h1>
+                <p>Knowing when to use barrels to maximize damage is very important. Gangplank can only hold 3 barrels at a time, so keeping the cooldown of your next barrel is very important.</p>
+                <p><b>Enemies destroying your barrels: </b>ADC's (I'm looking at you Caitlyn!) love to try to auto attack your barrels. As you reach higher elo, you will notice nearly everyone realizes if they auto your barrel, you will lose most of your damage and render you useless. Be not afraid, high elo mains have figured it out! If a melee champion is trying to auto your barrels, you are in a good position. Outplay and they will lose an autoattack AND you will get a barrel off. Pre level 13, your barrels tick down slower. Use this to your advantage by placing it -> Enemy walks up to auto the barrel -> and you walk up and auto the barrel, then Q just when the barrel's first tick goes. This method works nearly every time, however you might lose out on sheen damage. This works best early game pre-sheen. </p>
+                <p>Against ranged enemies, it can be just as easy to land a barrel. Instead of q'ing the barrel, you place another and auto it just as it ticks down. With good timing, you should be able to always get the auto off faster than the adc's auto, since you are melee and closest the barrel.</p>
+                <p class="imgcaption">Ashe trying to auto my barrel feat. Gosu. Show'em who's boss!</p>
+                <img src="https://gyazo.com/57c3f440359692988db467260cd1dde3.gif" width="600">
+                <p><b>Saving barrels: </b>Using the triple barrel combo is fun and flashy. However, it may not be the best combo to use in a teamfight. Using three barrels means you won't have any left. One trick you can use is to place a barrel in a place that the enemy can't see or probably won't go to auto, then wait for the barrel cooldown. In this case, you will have 1 barrel down, and 3 barrels left, allowing you to do more with an extra barrel. If you only use a triple barrel combo in a fight, landing one barrel may not be enough, so use double and single barrels, like in this example.</p>
+                <img src="https://i.gyazo.com/aa1eb60fa1fe6cc695a48deb539c3e64.gif" alt="https://gyazo.com/aa1eb60fa1fe6cc695a48deb539c3e64" width="800"/>
+                <p><b>Using Flash:</b> You can use flash to make some <i>flashy</i> plays. These are difficult (and risky if you mess up and just flash in place), however I think the most reliable and best one is the flash auto barrel.</p>
+                <img src="https://gyazo.com/004bc8fad33fa3c4f8dddb99afa68b74.gif" width="600">
+                <img id="doublebarrel" src="https://i.gyazo.com/666ed594e738b596f7fdb20da0a991b1.gif" width="600"/>
+                <p>If you're feeling lucky, try out the flash triple barrel.</p>
+                <img id="flashtriple" src="https://i.gyazo.com/eaede2d7b7dd493aa0e68473c3f303eb.gif" width="600"/>
+                <p><b>Chokeholds and teamfight spots:</b> WIP</p>
+                <p><b>Passive resets</b> WIP</p>
+                <p><b>Orange baits</b> WIP</p>
+            </section>
+
+            <section id="macroplay">
+                <h1>Macro Play</h1>
+                <p> WIP, will discuss rotations, when to push, lane dominance, etc.</p>
+            </section>
+        </article>
+    </body>
 </html>
