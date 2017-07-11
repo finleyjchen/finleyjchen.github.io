@@ -174,4 +174,7 @@ div {
 .runePage {
 	width: 500px;
 	height:auto;
+	position:relative;
+	float:right;
+	border-radius: 25px;
 }
