@@ -81,7 +81,6 @@ aside {
 	padding-top:1%;
 	padding-right: 1%;
 	font-size: 30px	;
-	background-color:white;
 }
 
 article {
@@ -96,8 +95,8 @@ h1 {
 
 #sidebar {
 	background-color:white;
-	display: table-cell;
-	vertical-align: middle;
+	/*display: table-cell;
+	vertical-align: middle;*/
 	padding-right: 4%;
 	position:sticky;
 	top:20%;
@@ -112,14 +111,17 @@ h1 {
 #sidebar a {
 	color: black;
 	font-size: 35px;
-	padding:3px;
 	font-style: none;
 	text-shadow: none;
-	text-align: right;
+	text-align: center;
 	font-family: 'Sorts Mill Goudy', serif;
-
+	display:inline-block;
+	height:0px;
 	}
 
+#sidebar a:hover {
+	background-color: blue;
+}
 .poroicon {
 	width:60px;
 	height:60px;
@@ -153,7 +155,7 @@ div {
 	float:right;
 	width: 600px;
 	height:auto;
-
+	border-radius:10px;
 }
 
 .imgcaption {
@@ -177,4 +179,5 @@ div {
 	position:relative;
 	float:right;
 	border-radius: 25px;
+	margin:3px;
 }
