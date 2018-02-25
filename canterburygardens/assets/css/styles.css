@@ -1,0 +1,19 @@
+.bigheader {
+  font-size:72px;
+  font-family:'Roboto Slab', serif;
+  color:rgb(154,9,9);
+  font-weight:600;
+}
+
+.jumbotron h1 {
+  font-family:'Roboto Slab';
+}
+
+footer p {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#000000;
+  /*margin-bottom:0;*/
+}
+
