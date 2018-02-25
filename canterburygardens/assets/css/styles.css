@@ -17,3 +17,7 @@ footer p {
   /*margin-bottom:0;*/
 }
 
+html, body {
+  overflow-x:hidden;
+}
+
