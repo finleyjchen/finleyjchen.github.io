@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
     <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body style="background-color:rgb(230,167,197);">
-    <header><div id="fb-root"></div>
+    <header style="position:fixed;top:0;width:100%;/*background-color:rgb(248,150,150);*/"><div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -39,40 +40,47 @@
         <div class="container-fluid" style="background-color:#ffffff;">
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-light navbar-expand-md" data-aos="fade-down" data-aos-duration="1000" style="font-family:Rubik, sans-serif;font-weight:normal;font-size:24px;">
-                        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/BURGUNDY LOGO[199].png" style="width:134px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                            <div
-                                class="collapse navbar-collapse" id="navcol-1">
+                    <nav class="navbar navbar-light navbar-expand-md" data-aos="fade-down" data-aos-duration="750" style="font-family:Rubik, sans-serif;font-weight:normal;font-size:24px;">
+                        <div class="container-fluid"><a class="navbar-brand" href="https://inlorfaze.github.io/canterburygardens/"><img class="img-fluid" src="assets/img/BURGUNDY LOGO[199].png" alt="Canterbury Gardens Logo" style="width:134px;"></a><button class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="nav navbar-nav">
                                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">HOME</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">ABOUT</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://yourchristmasstore.com">ONLINE STORE</a></li>
                                 </ul>
+                            </div>
                         </div>
+                    </nav>
                 </div>
-                </nav>
             </div>
         </div>
-        </div>
     </header>
-    <section></section>
-    <div data-bs-parallax-bg="true" style="height:500px;background-image:url(assets/img/building-banner.png);background-position:center;background-size:cover;"></div>
-    <article>
-        <div class="container" style="padding:0;">
-            <div class="row" style="height:404px;">
-                <div class="col" style="padding:8px 12px;height:232px;">
-                    <div class="jumbotron" data-aos="slide-right" data-aos-duration="1000" style="background-color:rgba(233,236,231,0.3);padding:8px;">
+    <article style="margin-top:148px;">
+        <div class="container-fluid" style="padding:0;">
+            <div class="row no-gutters">
+                <div class="col" style="padding:8px 12px;">
+                    <div class="jumbotron" data-aos="fade-up" data-aos-duration="1000" style="background-color:rgba(233,236,231,0.3);padding:8px;text-align:center;">
                         <h1 style="font-family:'Roboto Slab', serif;font-size:19px;margin:0;padding:0;font-style:italic;">Canterbury Gardens &amp; Gifts presents</h1>
-                        <div><img class="float-left" src="assets/img/51-85188.png" style="max-width:102px;">
-                            <h1 class="text-left" style="color:rgb(28,75,20);font-weight:normal;font-family:'EB Garamond', serif;font-size:50px;">&nbsp;<small style="font-size:25px;line-height:10px;">Mark Roberts</small> Spring Collection 2018</h1>
-                        </div>
                         <div></div>
+                        <div style="color:rgb(28,75,20);font-weight:normal;font-family:'EB Garamond', serif;font-size:50px;"><small class="d-block" style="font-size:25px;line-height:10px;padding-top:15px;">Mark Roberts</small><strong style="font-size:68px;font-family:'Slabo 27px', serif;"><img src="assets/img/51-85188.png" style="max-width:130px;">2018 SPRING FAIRIES &amp; ELVES</strong>
+                            <img
+                                src="assets/img/girl fairy.png" style="max-width:130px;"></div>
+                        <div style="text-align:center;"><a class="btn btn-outline-danger" role="button" href="#" data-bs-hover-animate="pulse">SHOP NOW</a></div>
                     </div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col">
+                    <blockquote class="blockquote" style="color:rgb(0,0,0);text-align:center;">
+                        <p class="mb-0">Canterbury Gardens &amp; Gifts is the best Christmas shop in Escondido!</p>
+                        <footer class="blockquote-footer" style="color:rgb(184,9,9);">Someone famous</footer>
+                    </blockquote>
                 </div>
             </div>
         </div>
     </article>
-    <div class="newsletter-subscribe">
+    <div data-aos="zoom-in-up" data-aos-duration="1050" class="newsletter-subscribe">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Subscribe to our Newsletter</h2>
@@ -82,6 +90,32 @@
                 <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
                 <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
             </form>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width:100%;">
+                        <div class="card-header">
+                            <h5 class="mb-0">iimportant info here</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width:100%;">
+                        <div class="card-header">
+                            <h5 class="mb-0">iimportant info here</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
