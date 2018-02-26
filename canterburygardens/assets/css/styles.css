@@ -31,7 +31,13 @@ html, body {
 }
 
 @media (min-width: 600px) {
-  .card {
+  .card.about-card {
+    width:50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card.about-card {
     width:100%;
   }
 }
