@@ -1,0 +1,106 @@
+.bigheader {
+  font-size:72px;
+  font-family:'Roboto Slab', serif;
+  color:rgb(154,9,9);
+  font-weight:600;
+}
+
+.jumbotron h1 {
+  font-family:Forum, cursive;
+  text-align:center;
+  text-transform:none;
+  font-size:40px;
+  color:white;
+  text-shadow:0 2px 4px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 480px) {
+  .jumbotron h1 {
+    font-size:80px;
+  }
+}
+
+footer p {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#000000;
+  /*margin-bottom:0;*/
+}
+
+html, body {
+  overflow-x:hidden;
+}
+
+@media (min-width: 600px) {
+  .fb-page.adapt {
+    float:right;
+    display:block;
+    width:50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .card.about-card {
+    width:50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card.about-card {
+    width:100%;
+  }
+}
+
+.jumbotron a {
+  margin:10px;
+}
+
+#map {
+  width:100%;
+  height:500px;
+  /*float:right;*/
+}
+
+.mapframe {
+  position:relative;
+  padding-bottom:56.25%;
+  /*padding-top:35px;*/
+  height:0;
+  overflow:hidden;
+  /*margin:auto;*/
+}
+
+.mapframe iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.mark-roberts-ad {
+  color:rgb(28,75,20);
+  font-weight:normal;
+  font-family:'EB Garamond', serif;
+  font-size:30px;
+}
+
+.mark-roberts-ad img {
+  max-width:60px;
+  height:auto;
+}
+
+@media (min-width: 500px) {
+  .mark-roberts-ad strong {
+    font-size:50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .mark-roberts-ad img {
+    max-width:130px;
+    height:auto;
+  }
+}
+
