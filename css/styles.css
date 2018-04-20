@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Tajawal");
+.navbar-toggler.collapsed span {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.navbar-toggler span {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+* {
+  font-family: "Tajawal", sans-serif;
+}
+
+.code {
+  width: 30%;
+  background: #343a40;
+  font-family: "operator mono", menlo, monaco, monospace;
+  line-height: 1.6;
+  color: #fff;
+  border-radius: 7px;
+  margin: 0 auto;
+  box-shadow: 1px 4px  black;
+}
+
+.code p {
+  padding: 0 1.5em;
+  margin: 0;
+}
+
+.code p:nth-child(1) {
+  animation: step 3.5s -0.875s infinite;
+}
+
+.code p:nth-child(2) {
+  animation: step 3.5s 0s infinite;
+}
+
+.code p:nth-child(3) {
+  animation: step 3.5s 0.875s infinite;
+}
+
+.code p:nth-child(4) {
+  animation: step 3.5s 1.75s infinite;
+}
+
+.code p:nth-child(5) {
+  animation: step 3.5s 2.625s infinite;
+}
+
+@keyframes step {
+  from, 37%, 63%, to {
+    background: transparent;
+    color: #fff;
+  }
+  37.1%, 62.9% {
+    background: #fff;
+    color: #343a40;
+  }
+}
+
+.container, .container-fluid {
+  padding: 0;
+}
+
+.jumbotron {
+  padding: 1em;
+}
+
+.btn-black {
+  color: #343a40;
+  border: 1px solid #343a40;
+  border-radius: 2px;
+}
+
+.btn-black:hover {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.btn-white:hover {
+  background-color: #fff;
+  color: #343a40;
+}
+/*# sourceMappingURL=styles.css.map */

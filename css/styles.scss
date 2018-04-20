@@ -1,0 +1,30 @@
+@import 'navbar';
+@import 'fonts';
+@import 'a-programmers-life';
+
+.container, .container-fluid {
+    padding:0;
+}
+.jumbotron {
+    padding:1em;
+}
+
+.btn-black {
+    color:#343a40 ;
+    border:1px solid #343a40 ;
+    border-radius:2px;
+    &:hover {
+        background-color:#343a40 ;
+        color:white;
+    }
+}
+
+.btn-white {
+    color:#fff ;
+    border:1px solid #fff ;
+    border-radius:2px;
+    &:hover {
+        background-color:#fff ;
+        color:#343a40;
+    }
+}
