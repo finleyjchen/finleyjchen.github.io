@@ -6,3 +6,10 @@ $default: 'Tajawal', sans-serif;
     font-family: $default;
 }
 
+
+@media (max-width:512px) {
+    html {
+        font-size:0.9rem;
+    }
+  }
+  
