@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Tajawal");
+@import url("https://use.typekit.net/svx3mpk.css");
 .navbar-toggler.collapsed span {
   -moz-transition: all 2s linear;
   -webkit-transition: all 2s linear;
@@ -17,7 +18,8 @@
 }
 
 * {
-  font-family: "Tajawal", sans-serif;
+  font-family: "proxima-nova", sans-serif;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 512px) {
@@ -77,6 +79,38 @@
   .code {
     width: 70%;
   }
+}
+
+.content {
+  line-height: 2em;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+}
+
+.content p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 480px) {
+  .content {
+    line-height: inherit;
+  }
+}
+
+.index-list {
+  padding: 0;
+}
+
+.index-list .index-list-item {
+  list-style-type: circle;
+}
+
+.index-list .index-list-item a {
+  font-size: 1.2em;
+  line-height: 2em;
 }
 
 .container, .container-fluid {

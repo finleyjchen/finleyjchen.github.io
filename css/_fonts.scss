@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Tajawal');
-
+@import url("https://use.typekit.net/svx3mpk.css");
 $default: 'Tajawal', sans-serif;
+$default: 'europa', sans-serif;
+$header: 'proxima-nova', sans-serif;
 
 * {
-    font-family: $default;
+    font-family: $header;
+    letter-spacing: 0px;
+
 }
 
 
@@ -11,5 +15,5 @@ $default: 'Tajawal', sans-serif;
     html {
         font-size:0.9rem;
     }
-  }
+  } 
   
