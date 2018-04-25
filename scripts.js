@@ -4,9 +4,13 @@ function repeat() {
     code();
     repeat();
   }
+
+$(window).scroll(function() {    
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 300) {
+        $(".index-list").addClass(".affix-top");
+    }
+});
   
-  const code = document.querySelector('.code')
-  code.innerHTML = repeat.toString()
-    .split(/\n/)
-    .map(line => `<p>${line}</p>`)
-    .join('')

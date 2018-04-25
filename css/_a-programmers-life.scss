@@ -1,9 +1,9 @@
 .code {
   width:90%;
-  background: #343a40 ;
+  background: #fff ;
   font-family: "operator mono", menlo, monaco, monospace;
   line-height: 1.6;
-  color: #fff;
+  color: #343a40;
   border-radius: 7px;
   margin:0 auto;
   box-shadow: 1px 4px  black;
@@ -28,11 +28,11 @@
 @keyframes step {
   from, 37%, 63%, to {
     background: transparent;
-    color: #fff;
+    color: #343a40;
   }
   37.1%, 62.9% {
-    background: #fff;
-    color: #343a40 ;
+    background: #343a40;
+    color: #fff ;
   }
 }
 
