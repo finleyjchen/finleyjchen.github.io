@@ -21,10 +21,18 @@
     padding:0;
 
     .index-list-item {
-        list-style-type: circle;
+        list-style: none;
         a{
             font-size:1.2em;
             line-height:2em;
+            padding-left:20px;
+            &:hover {
+                padding-left: 19px;
+                color: #563d7c;
+                text-decoration: none;
+                background-color: transparent;
+                border-left: 1px solid #563d7c;
+            }
         }
     }
 }

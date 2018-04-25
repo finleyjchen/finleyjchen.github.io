@@ -29,3 +29,25 @@
         color:#343a40;
     }
 }
+
+.card {
+    border: 1px solid #4d5358;
+    border-radius: 1px;
+}
+.card-body {
+    .card-title {
+        font-size:1.5em;
+    }
+    
+    .card-text, a {
+        letter-spacing: 1px;
+    }
+}
+
+
+.jumbotron {
+    background-color:rgb(236, 236, 236);
+    p {
+        letter-spacing: 1px;
+    }
+}
