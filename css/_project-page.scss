@@ -2,6 +2,7 @@
 .content {
     line-height:2em;
     img {
+        display: block;
         width:100%;
         height:auto;
     }
@@ -14,6 +15,7 @@
 @media (max-width:480px) {
     .content {  
         line-height: inherit;
+        
     }
 }
 
@@ -38,3 +40,13 @@
     }
 }
 
+
+.two-images {
+    height:200px;
+    text-align: center;
+    img {
+        display:inline;
+        height:100%;
+        width:auto;
+    }
+}

@@ -110,6 +110,7 @@
 }
 
 .content img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -145,6 +146,17 @@
   text-decoration: none;
   background-color: transparent;
   border-left: 1px solid #563d7c;
+}
+
+.two-images {
+  height: 200px;
+  text-align: center;
+}
+
+.two-images img {
+  display: inline;
+  height: 100%;
+  width: auto;
 }
 
 .container, .container-fluid {
@@ -193,6 +205,7 @@
 .jumbotron {
   background-color: #343a40;
   color: white;
+  word-wrap: break-word;
 }
 
 .jumbotron p {
@@ -202,5 +215,23 @@
 .affix-top {
   position: fixed;
   top: 100px;
+}
+
+.footer-wrapper {
+  margin: 1em 0;
+  background-color: #343a40;
+  color: white;
+}
+
+.footer-wrapper p, .footer-wrapper a, .footer-wrapper small {
+  letter-spacing: 1px;
+}
+
+.footer-wrapper a {
+  color: lightgray;
+}
+
+.no-gutters {
+  padding: 0 0.2em;
 }
 /*# sourceMappingURL=styles.css.map */

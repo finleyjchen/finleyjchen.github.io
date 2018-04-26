@@ -48,6 +48,7 @@
 .jumbotron {
     background-color: #343a40;
     color:white;
+    word-wrap: break-word;
     p {
         letter-spacing: 1px;
     }
@@ -56,4 +57,20 @@
 .affix-top {
     position:fixed;
     top:100px;
+}
+
+.footer-wrapper {
+    margin:1em 0;
+    background-color:#343a40;
+    color:white;
+    p, a, small {
+        letter-spacing: 1px;
+    }
+    a {
+        color:rgb(211, 211, 211);
+    }
+}
+
+.no-gutters {
+    padding:0 0.2em;
 }
