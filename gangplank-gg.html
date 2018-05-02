@@ -15,30 +15,35 @@
   </head>
   <body>
       <header>
-          <div class="collapse bg-dark" id="navbarHeader">
+          <div class="collapse" id="navbarHeader">
             <div class="container">
-              <div class="row no-gutters">
-                <div class="col-sm-8 col-md-7 py-4">
-                  <h4 class="text-white">About Me</h4>
-                  <p class="text-white-50">Hey there! My name is Finley Chen. I am a student at Cal Poly, San Luis Obispo as well as a freelance web developer. Learn more about me or view my services by visiting my main website at <a class="text-white" href="https://fjchen.net">fjchen.net</a>.</p>
-                  <a href="#!" class="btn btn-white">
-                          <span class="icon ion-social-github"></span>
-                  </a>
+              <div class="row no-gutters text-center">
+                <div class="col-md-7 py-4">
+                  <h4 class="">About Me</h4>
+                  <p class="">Hey there! My name is Finley Chen. I am a student at Cal Poly, San Luis Obispo as well as a freelance web developer. Learn more about me or view my services by visiting my main website at <a class="" href="https://fjchen.net">fjchen.net</a>.</p>
+                  <div class="social-links">
+                      <a href="https://github.com/inlorfaze" style="width:3em;" class="btn btn-black">
+                        <span class="icon ion-social-github"></span>
+                      </a>
 
-                  <a href="#!" class="btn btn-white">
-                          <span class="icon ion-social-facebook"></span>
-                  </a>
+                      <a href="https://facebook.com/finleychen" style="width:3em;" class="btn btn-black">
+                              <span class="icon ion-social-facebook"></span>
+                      </a>
 
-                  <a href="#!" class="btn btn-white">
-                          <span class="icon ion-social-twitter"></span>
-                  </a>
+                      <a href="https://twitter.com/finleychen" style="width:3em;" class="btn btn-black">
+                              <span class="icon ion-social-twitter"></span>
+                      </a>
+
+                      <a href="mailto:finleyjchen@gmail.com" style="width:3em;" class="btn btn-black">
+                        <span class="icon ion-email"></span>
+                      </a>
+                  </div>
+
                           
               </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <a href="/"><h4 class="text-white">Projects</h4></a>
-                    <a href="/project-ideas.html">
-                      <h4 class="text-white">Project Ideas</h4>
-                    </a>
+                <div class="col-md-5 py-4">
+                    <a class="navbar-button big projects" href="/projects.html">Projects</a>
+                    <a class="navbar-button big project-ideas" href="/project-ideas.html">Project Ideas</a>
 
                 </div>
               </div>
@@ -61,9 +66,9 @@
                     <div class="jumbotron jumbotron-fluid text-center">
                         <div class="col-md-8 offset-md-2">
                                 <h1 class="">gangplank.gg</h1>
-                                <a class="text-white" href=""><i class="icon ion-social-github"></i> github</a>
+                                <a class="text-white" href="https://github.com/inlorfaze/gangplank_gg"><i class="icon ion-social-github"></i> github</a>
                                 |
-                                <a class="text-white"href=""><i class="icon ion-earth"></i>  live site</a>
+                                <s><a class="text-white"href=""><i class="icon ion-earth"></i>  live site</a></s>
                                 <hr class="my-4">
         </div>
 
@@ -75,48 +80,42 @@
 
 
             <div class="col-md-9 content">
-              <h3 id="intro">
-                Introduction
+              <h3 id="background">
+                Background
               </h3>
               <hr>
-              <p>
-                This project is my main website. It is the main link that I have under my social media and business inquiries, Its purpose is to
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima non dolorum nostrum optio, nisi atque neque tempore error quos odio numquam aliquam eius modi iure eligendi, explicabo adipisci magnam.
-                Necessitatibus nostrum molestias, doloremque fugit labore maiores rerum doloribus odio accusantium nihil totam! Itaque culpa ex eligendi quam commodi praesentium maiores! Quasi repellat doloremque quo eaque ipsum inventore facilis quos.
-                Libero molestiae eum facilis tenetur nulla quaerat tempora nostrum ratione repudiandae. In, deserunt ex impedit harum sunt labore ipsa vel molestiae expedita reprehenderit eaque doloremque nam voluptas iure dignissimos asperiores?
-                Nihil ipsa animi cupiditate eum nulla ea quo nisi numquam iusto quia? At ea est dignissimos nam in, totam, et esse fugit natus sequi eveniet perspiciatis magnam obcaecati, dolore blanditiis?
-              </p>
+              <p>This website is going to be a hub for all things related to the League of Legends game character Gangplank. It have a variety of features that I haven't implemented before on any website. </p>
+              <p><b>Why?</b></p>
+              <p>In high school, I played League of Legends religiously and seriously on the North American server. I peaked in Challenger, a rank on the League of Legends leaderboard reserved for the top 200 players in the region. I only play Gangplank, my favorite character in the game. I made some videos and streamed a bit, contributing a small amount to the community. As I gain this skill of creating websites, I thought I could contribute to something I love in a cool way. </p>
 
-              <h3 id="body">
-                Body
-              </h3>
+              <h3 id="structure">Structure</h3>
+              <hr>
+              <ul>
+                <li>uses the <a href="https://developer.riotgames.com/">Riot Games api</a> to gather static data as well as store data about Gangplank players in every region. Eventually, I want the database to provide the most in-depth information on one champion than any other website has done before.</li>
+                <li>uses the <a href="https://www.reddit.com/dev/api/">Reddit api</a> to display recent activity from the <a href="https://reddit.com/r/gangplankmains">Gangplank mains subreddit.</a></li>
+                <li>I'm also going to attempt to make it a fast loading MVC (Model-View-Controller) based website, which will probably be easiest by use of a JavaScript framework like <a href="https://reactjs.org/">React</a> or <a href="https://vuejs.org/">Vue.js</a>, which can handle the state and views of my DOM elements.</li>
+              </ul>
+              <img src="/gp/img/classicgp.jpg" alt="classicgp">
+              <small class="img-caption">Gangplank is a pirate. Yarrr! </small>
+              <p>
+                This project is meant to increase my skill in working with apis, JavaScript frameworks, and also fulfill a service void in the community by having this website online.</p>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta odit, assumenda quae porro ullam repellat reiciendis, repellendus at explicabo pariatur aperiam ex quam magnam sint fugiat laudantium nobis expedita.
-                Nulla cumque deserunt tempora eaque vel unde sunt quae earum debitis iste esse, iure vero praesentium magni optio, ratione facere. Similique sequi expedita distinctio, doloribus fuga consequatur voluptate accusantium ipsa?
-                Culpa iusto laboriosam sequi fugiat cupiditate, delectus molestiae explicabo, repellendus sint ad aperiam excepturi adipisci commodi cum esse quam minus maxime accusantium aspernatur atque, aut tempore veniam qui? Ex, quasi.
-                Ex omnis ullam blanditiis inventore alias distinctio libero ipsam voluptates dolorum hic! Quidem, blanditiis officia? Magni at, corporis perferendis quidem in facere molestias molestiae blanditiis rem ducimus, recusandae porro aut.
-                Placeat tempora at asperiores voluptatem. Omnis quae tempora aliquam tenetur magni temporibus dolorum reprehenderit dolores sed vel accusamus dolor fugit quis sint minus, sapiente itaque, eaque inventore sit ratione! Deleniti!
-                Quasi at incidunt quis pariatur deserunt cumque neque facere cum, totam laudantium ullam voluptatibus accusantium reprehenderit deleniti dolores quae corporis vero voluptates. Cupiditate ipsam libero neque ut. Totam, qui adipisci!
-                Exercitationem quibusdam enim et molestiae vitae excepturi ipsum eveniet, ad officia ipsa cumque reiciendis voluptate tenetur temporibus possimus, quaerat veniam provident tempora consequatur. Repudiandae minus totam consequatur optio quaerat alias.
-                Nesciunt, facilis, eaque architecto vero eligendi omnis recusandae corporis voluptatibus soluta mollitia minus incidunt necessitatibus quis ipsam nobis minima aperiam magni corrupti impedit alias reprehenderit doloremque dolorum. Nulla, voluptatum quasi.
-                Harum nihil veniam, obcaecati fuga nulla modi assumenda magnam animi rerum cumque ducimus delectus perspiciatis dolor maxime iusto ex. Ipsam, minus. Quisquam omnis saepe fugit quibusdam aspernatur fugiat autem dolorem.
-                Quidem illum at eius tempora adipisci commodi voluptates? Esse voluptatem beatae doloribus voluptatum voluptas deserunt? Illo debitis, amet, quaerat error facere voluptas modi, ratione tempore minima rerum cumque ad dicta.
-              </p>
+                I haven't chosen which javascript framework I want to use, right now I'm leaning towards ReactJS/Express to handle my database queries well. As I learn more about how apis, queries and headers work I will probably have a good idea on how to set this project up better.
+                </p>
             </div>
 
 
             <div class="col-md-1">
                   <ul class="index-list">
                     <li class="index-list-item">
-                      <a href="#intro">Introduction</a>
+                      <a href="#background">Background</a>
                     </li>
-                    <li class="index-list-item"><a href="#intro">Introduction</a></li>
-                    <li class="index-list-item"><a href="#intro">Introduction</a></li>
+                    <li class="index-list-item">
+                      <a href="#structure">Structure</a>
+                    </li>
                   </ul>  
-                </div>
+            </div>
           </div>
         </div>
   

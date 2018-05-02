@@ -23,12 +23,114 @@
   text-transform: uppercase;
 }
 
+.navbar-button .projects {
+  overflow: hidden;
+}
+
+.navbar-button .projects:after {
+  font-family: "Ionicons";
+  content: "\f341";
+  position: absolute;
+  top: 11px;
+  right: -30px;
+  transition: all 200ms ease;
+}
+
+.navbar-button .projects:hover:after {
+  right: 7px;
+}
+
+.navbar-button .project-ideas {
+  overflow: hidden;
+}
+
+.navbar-button .project-ideas:after {
+  font-family: "Ionicons";
+  content: "\f451";
+  position: absolute;
+  top: 70px;
+  right: -100px;
+  transition: all 200ms ease;
+}
+
+.navbar-button .project-ideas:hover:after {
+  right: 7px;
+}
+
+.navbar-button {
+  overflow: hidden;
+  display: block;
+  font-size: 1.5em;
+  color: black;
+}
+
+.navbar-button:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-button.projects:after {
+  font-family: "Ionicons";
+  content: "\f341";
+  padding-left: 5px;
+  visibility: hidden;
+}
+
+.navbar-button.projects:hover:after {
+  visibility: visible;
+}
+
+.navbar-button.projects:before {
+  font-family: "Ionicons";
+  content: "\f341";
+  padding-right: 5px;
+  visibility: hidden;
+}
+
+.navbar-button.projects:hover:before {
+  visibility: visible;
+}
+
+.navbar-button.project-ideas:after {
+  font-family: "Ionicons";
+  content: "\f451";
+  padding-left: 5px;
+  visibility: hidden;
+}
+
+.navbar-button.project-ideas:hover:after {
+  visibility: visible;
+}
+
+.navbar-button.project-ideas:before {
+  font-family: "Ionicons";
+  content: "\f451";
+  padding-right: 5px;
+  visibility: hidden;
+}
+
+.navbar-button.project-ideas:hover:before {
+  visibility: visible;
+}
+
+.social-links a > span {
+  font-size: 1.5em;
+}
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "proxima-nova", sans-serif;
   letter-spacing: 0px;
 }
 
-* h1, * h2, * h3, * h4, * h5 {
+* h1, * h2, * h3, * h4, * h5, * .big {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -233,5 +335,43 @@
 
 .no-gutters {
   padding: 0 0.2em;
+}
+
+.big-button {
+  width: 90%;
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .big-button {
+    margin: 0 10%;
+    padding: 2em;
+  }
+}
+
+.projects-title:after {
+  font-family: "Ionicons";
+  content: "\f341";
+  padding-left: 5px;
+}
+
+.projects-title:before {
+  font-family: "Ionicons";
+  content: "\f341";
+  padding-right: 5px;
+}
+
+.ideas-title:after {
+  font-family: "Ionicons";
+  content: "\f451";
+  padding-left: 5px;
+}
+
+.ideas-title:before {
+  font-family: "Ionicons";
+  content: "\f451";
+  padding-right: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

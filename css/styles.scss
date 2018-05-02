@@ -74,3 +74,44 @@
 .no-gutters {
     padding:0 0.2em;
 }
+
+.big-button {
+    width:90%;
+    margin:0;
+    font-size:2em;
+    text-align:center;
+}
+
+@media (min-width:1000px) {
+    .big-button {
+        margin: 0 10%;
+        padding:2em;
+
+    }
+}
+
+.projects-title {
+    &:after {
+        font-family: "Ionicons";
+        content:"\f341";
+        padding-left:5px;
+    }
+    &:before {
+        font-family: "Ionicons";
+        content:"\f341";
+        padding-right:5px;
+    }
+}
+
+.ideas-title {
+    &:after {
+        font-family: "Ionicons";
+        content:"\f451";
+        padding-left:5px;
+    }
+    &:before {
+        font-family: "Ionicons";
+        content:"\f451";
+        padding-right:5px;
+    }
+}
